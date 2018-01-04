@@ -1,0 +1,4 @@
+context.state = context.state || 0;
+(context.state === 0) ? context.state = 1: context.state = 0;
+msg.payload = context.state;
+return msg;
